@@ -1,0 +1,78 @@
+# bashmd.micro
+# bash & markdown specific theme
+# scheme for dark terminals
+# this colorscheme references the updated sh.yaml and markdown.yaml - 
+# syntax files in ./config/micro/syntax
+
+# comments
+color-link comment "brightblack" #grey
+
+# links, url's & constants (bash and markdown)
+color-link constant "#8cdf8e" #brightgreen
+
+# constant numbers (bash-numbers, markdown-italic)
+color-link constant.number "#f8ad39" #orange
+
+# constant strings (bash-strings, markdown-tables)
+color-link constant.string "#c2d5c3" #lightgreen
+
+# images markdown specific (markdown only)
+color-link constant.bool "#d47283" #lightred
+
+# line break spaces, markdown specific (markdown only)
+color-link constant.specialChar ",brightblack" #grey
+
+# variables with a $ (bash-$variables, markdown-lists)
+color-link identifier "#7bdbde" #brightcyan 
+
+# shell commands (bash-core utils, markdown-bold)
+color-link type "#c37bde" # magenta
+
+# strikethrough, markdown specific (markdown only)
+color-link type.extended "#e3af94" #lightorange
+
+# Conditionals and control flow, (markdown, quotes)
+color-link statement "#ecea89" #lightyellow
+
+# special chacters, headlines, horizontal lines (bash-special, markdown only)
+color-link special "bold #65dcf1" #brightcyan
+
+# code (markdown only)
+color-link symbol "#ae6ed3" #darkmagenta
+
+# html comments (markdown only)
+color-link symbol.tag "brightblack" #html comments
+
+# bracket highlighting. (bash only)
+color-link symbol.brackets "#5c88ff" #bold blue
+
+# shell #! (bash only)
+color-link preproc.shebang "white" #bold white
+
+# sudo (bash-sudo, markdown-misc)
+color-link preproc "bold #f88383" #bold red
+
+# ---------- system -----------------
+color-link ignore "default"
+color-link error ",brightred"
+color-link todo ",brightyellow"
+color-link statusline "#5efff4,#595959"
+color-link hlsearch "black,yellow"
+color-link indent-char "brightblack"
+
+# ---------- line numbers -----------
+color-link line-number "brightblack"
+color-link current-line-number "bold white"
+
+# diffs
+color-link diff-added "green"
+color-link diff-modified "yellow"
+color-link diff-deleted "red"
+# gutter warnings
+color-link gutter-error ",red"
+color-link gutter-warning "red"
+# rh rule
+color-link color-column "#342a44"
+
+
+
