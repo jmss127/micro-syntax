@@ -7,50 +7,50 @@
 # comments
 color-link comment "brightblack" #grey
 
-# links, url's & constants (bash and markdown)
+# links, url's & constants 
 color-link constant "#8cdf8e" #brightgreen
 
-# constant numbers (bash-numbers, markdown-italic)
-color-link constant.number "#f8ad39" #orange
+# bash-numbers, markdown-italic
+color-link constant.number "italic #fdbe5d" #orange
 
-# constant strings (bash-strings, markdown-tables)
+# bash-strings, markdown-tables
 color-link constant.string "#c2d5c3" #lightgreen
 
-# images markdown specific (markdown only)
+# images markdown 
 color-link constant.bool "#d47283" #lightred
 
-# line break spaces, markdown specific (markdown only)
+# line break spaces markdown 
 color-link constant.specialChar ",brightblack" #grey
 
-# variables with a $ (bash-$variables, markdown-lists)
-color-link identifier "#7bdbde" #brightcyan 
+# bash-$variables, markdown-lists
+color-link identifier "#f07e96" #red
 
-# shell commands (bash-core utils, markdown-bold)
+# shell commands, markdown bold
 color-link type "#c37bde" # magenta
 
-# strikethrough, markdown specific (markdown only)
-color-link type.extended "#e3af94" #lightorange
+# strikethrough markdown 
+color-link type.extended "#4cb396" #dark green
 
-# Conditionals and control flow, (markdown, quotes)
-color-link statement "#ecea89" #lightyellow
+# shell conditionals, markdown quotes
+color-link statement "#ecea89" #light yellow
 
-# special chacters, headlines, horizontal lines (bash-special, markdown only)
-color-link special "bold #65dcf1" #brightcyan
+# shell special chacters, markdown headlines and horizontal lines
+color-link special "bold #65dcf1" #bright cyan
 
-# code (markdown only)
-color-link symbol "#ae6ed3" #darkmagenta
+# code markdown
+color-link symbol "#ae6ed3" #dark magenta
 
-# html comments (markdown only)
+# html comments markdown
 color-link symbol.tag "brightblack" #html comments
 
-# bracket highlighting. (bash only)
+# bracket highlighting shell
 color-link symbol.brackets "#5c88ff" #bold blue
 
-# shell #! (bash only)
+# shell #! 
 color-link preproc.shebang "white" #bold white
 
-# sudo (bash-sudo, markdown-misc)
-color-link preproc "bold #f88383" #bold red
+# sudo, markdown misc
+color-link preproc "#c37bde" # magenta
 
 # ---------- system -----------------
 color-link ignore "default"
