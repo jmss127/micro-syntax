@@ -79,7 +79,7 @@ rules:
         rules: []
 
       # sudo
-    - preproc: "\\b(sudo)\\b"
+    - preproc: "\\b(sudo|apt)\\b"
    
     - comment:
         start: "(^|\\s)#"

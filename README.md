@@ -10,4 +10,11 @@ sh.yaml with shebang highlighting, sudo, brackets and additional url highlightin
 ## colorschemes
 
 ### bashmd.micro
-A scheme set up for dark theme terminals using a true-color pastel pallete, specifically for the syntax-highlighting files above. Colors will vary depending on the terminal used, works on 256-color terminals.
+A scheme set up for dark theme terminals using a true-color pastel pallete, specifically for the syntax-highlighting files above. Colors will vary depending on the terminal used, works on 256-color and true-color terminals.
+
+### Screenshots
+Markdown
+![markdown test](markdown-test.png)
+
+Shell Scripts
+![bash test](bash-test.png)

@@ -14,16 +14,16 @@ color-link constant "#8cdf8e" #brightgreen
 color-link constant.number "italic #fdbe5d" #orange
 
 # bash-strings, markdown-tables
-color-link constant.string "#c2d5c3" #lightgreen
+color-link constant.string "#c2d5c3" #sage
 
 # images markdown 
-color-link constant.bool "#d47283" #lightred
+color-link constant.bool "#cc5a6d" #muted red
 
 # line break spaces markdown 
 color-link constant.specialChar ",brightblack" #grey
 
 # bash-$variables, markdown-lists
-color-link identifier "#f07e96" #red
+color-link identifier "#ff7391" #light red
 
 # shell commands, markdown bold
 color-link type "#c37bde" # magenta
