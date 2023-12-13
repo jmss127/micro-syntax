@@ -14,7 +14,7 @@ color-link constant "#8cdf8e" #brightgreen
 color-link constant.number "italic #fdbe5d" #orange
 
 # bash-strings, markdown-tables
-color-link constant.string "#c2d5c3" #sage
+color-link constant.string "#a4e3aa" #pastel green
 
 # images markdown 
 color-link constant.bool "#cc5a6d" #muted red
@@ -35,6 +35,7 @@ color-link type.extended "#4cb396" #dark green
 color-link statement "#ecea89" #light yellow
 
 # shell special chacters, markdown headlines and horizontal lines
+color-link identifier.class "bold #0b2bff,#cba4e3" #bold blue, pastel pink
 color-link special "bold #65dcf1" #bright cyan
 
 # code markdown
