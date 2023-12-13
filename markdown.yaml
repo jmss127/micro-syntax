@@ -33,7 +33,8 @@ rules:
     - statement:  "^>.*"
 
       # headlines
-    - special:  "^#{1,6}.*"
+    - identifier.class: "^#{1}.*"  
+    - special:  "^#{2,6}.*"
 
       # horizontal rules
     - special: "^(---+|===+|___+|\\*\\*\\*+)\\s*$"
@@ -50,10 +51,10 @@ rules:
         end: "`"
         rules: []
 
-      # indented code this does work.
+      # indented code 
     - symbol: "((?:^(?:[ ]{4}|\t)(?:[^\r\n]*))+)"
 
-      # fenced code should be multi-line
+      # fenced code 
     - symbol:
         start: "```"
         end: "```"
