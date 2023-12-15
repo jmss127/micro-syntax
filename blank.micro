@@ -1,0 +1,75 @@
+# blank.micro
+# blank colorscheme
+
+color-link default ""
+
+color-link comment ""
+color-link comment.bright ""
+
+color-link identifier ""
+color-link identifier.class ""
+color-link identifier.macro ""
+color-link identifier.var ""
+
+color-link constant ""
+color-link constant.bool ""
+color-link constant.bool.true ""
+color-link constant.bool.false ""
+color-link constant.number ""
+color-link constant.specialChar ""
+color-link constant.string ""
+color-link constant.string.url ""
+
+color-link statement ""
+
+color-link symbol ""
+color-link symbol.brackets ""
+color-link symbol.operator ""
+color-link symbol.tag ""
+
+color-link preproc ""
+color-link preproc.shebang ""
+
+color-link type ""
+color-link type.keyword ""
+
+color-link special ""
+
+color-link underlined ""
+
+color-link error ""
+
+color-link todo ""
+
+color-link selection ""
+
+color-link statusline ""
+
+color-link tabbar ""
+
+color-link indent-char ""
+
+color-link line-number ""
+
+color-link gutter-error ""
+color-link gutter-warning ""
+
+color-link diff-added ""
+color-link diff-modified ""
+color-link diff-deleted ""
+
+color-link cursor-line ""
+
+color-link current-line-number ""
+
+color-link color-column ""
+
+color-link ignore ""
+
+color-link scrollbar ""
+
+color-link divider ""
+
+color-link message ""
+
+color-link error-message ""
