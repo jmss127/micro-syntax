@@ -1,0 +1,67 @@
+filetype: markdown
+
+detect:
+    filename: "\\.(livemd|md|mkd|mkdn|markdown)$"
+
+rules:
+      # links & url's
+    - constant: "\\[[^]]+\\]"
+    - constant: "\\[([^][]|\\[[^]]*\\])*\\]\\([^)]+\\)"
+    - constant: "<(.*?)>"
+    - constant: "https?://[^ )>]+"
+
+      # Tables (Github extension)
+    - constant.string: ".*[ :]\\|[ :].*"
+
+      # Emphasis, italic
+    - constant.number: "(^|[[:space:]])(_[^ ][^_]*_|\\*[^ ][^*]*\\*)"  
+
+      # images
+    - constant.bool: "!\\[[^][]*\\](\\([^)]+\\)|\\[[^]]+\\])" 
+
+      # Line break spaces
+    - constant.specialChar: "  $"  
+    - constant.specialChar: "[[:space:]]+$"  
+
+      # Strong emphasis, bold
+    - type: "(^|[[:space:]])(__[^ ][^_]*__|\\*\\*[^ ][^*]*\\*\\*)"
+
+      # strike-through
+    - type.extended: "(^|[[:space:]])~~[^ ][^~]*~~" 
+
+      # quotes
+    - statement:  "^>.*"
+
+      # headlines
+    - identifier.class: "^#{1}.*"  
+    - special:  "^#{2,6}.*"
+
+      # horizontal rules
+    - special: "^(---+|===+|___+|\\*\\*\\*+)\\s*$"
+
+      # lists
+    - identifier:   "^[[:space:]]*[\\*+-] |^[[:space:]]*[0-9]+\\. "
+
+      # misc
+    - preproc:   "(\\(([CcRr]|[Tt][Mm])\\)|\\.{3}|(^|[[:space:]])\\-\\-($|[[:space:]]))"
+
+      # code snippet
+    - symbol: 
+        start: "`"
+        end: "`"
+        rules: []
+
+      # indented code 
+    - symbol: "((?:^(?:[ ]{4}|\t)(?:[^\r\n]*))+)"
+
+      # fenced code 
+    - symbol:
+        start: "```"
+        end: "```"
+        rules: []  
+
+      # html comments
+    - symbol.tag:
+        start: "<!\\-\\-"
+        end: "\\-\\->"
+        rules: []

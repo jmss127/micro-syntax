@@ -1,0 +1,79 @@
+# bashmd.micro
+# bash & markdown specific theme
+# scheme for dark terminals
+# this colorscheme references the updated sh.yaml and markdown.yaml - 
+# syntax files in ./config/micro/syntax
+
+# comments
+color-link comment "brightblack" #grey
+
+# links, url's & constants 
+color-link constant "#8cdf8e" #brightgreen
+
+# bash-numbers, markdown-italic
+color-link constant.number "italic #fdbe5d" #orange
+
+# bash-strings, markdown-tables
+color-link constant.string "#a4e3aa" #pastel green
+
+# images markdown 
+color-link constant.bool "#cc5a6d" #muted red
+
+# line break spaces markdown 
+color-link constant.specialChar ",brightblack" #grey
+
+# bash-$variables, markdown-lists
+color-link identifier "#ff7391" #light red
+
+# shell commands, markdown bold
+color-link type "#c37bde" # magenta
+
+# strikethrough markdown 
+color-link type.extended "#4cb396" #dark green
+
+# shell conditionals, markdown quotes
+color-link statement "#ecea89" #light yellow
+
+# shell special chacters, markdown headlines and horizontal lines
+color-link identifier.class "bold #0b2bff,#cba4e3" #bold blue, pastel pink
+color-link special "bold #65dcf1" #bright cyan
+
+# code markdown
+color-link symbol "#ae6ed3" #dark magenta
+
+# html comments markdown
+color-link symbol.tag "brightblack" #html comments
+
+# bracket highlighting shell
+color-link symbol.brackets "#5c88ff" #bold blue
+
+# shell #! 
+color-link preproc.shebang "white" #bold white
+
+# sudo, markdown misc
+color-link preproc "#c37bde" # magenta
+
+# ---------- system -----------------
+color-link ignore "default"
+color-link error ",brightred"
+color-link todo "black,brightyellow"
+color-link statusline "#5efff4,#595959"
+color-link hlsearch "black,yellow"
+color-link indent-char "brightblack"
+
+# ---------- line numbers -----------
+color-link line-number "brightblack"
+color-link current-line-number "bold white"
+
+# diffs
+color-link diff-added "green"
+color-link diff-modified "yellow"
+color-link diff-deleted "red"
+# gutter warnings
+color-link gutter-error ",red"
+color-link gutter-warning "red"
+# rh rule
+color-link color-column "#342a44"
+
+
+
